@@ -1,5 +1,5 @@
+const a = [2, 4, 2, 3];
 function containsDuplicates(a) {
-    var firstNum = 0;
     
 for (var i = 0; i < a.length; i++) {
     
@@ -9,9 +9,11 @@ for (var i = 0; i < a.length; i++) {
     
     for (var h = i + 1; h < a.length; h++){
         if ( a[i] == a[h]){
-            return true;
+            return true + a[h];
         }
     }
 }
     return false;
 }
+
+containsDuplicates(a);
